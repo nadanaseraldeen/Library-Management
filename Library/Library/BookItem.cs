@@ -12,10 +12,8 @@ namespace Library
         public int tag { get; set; }
         public string isReferenceOnly { get; set; }
         public int CatalogID { get; set; }
-        public Catalog catalog { get; set; }
-        public int? AccountID { get; set; }
-        public Account account { get; set; }
+        public string AuthorName { get; set; }
+        public int? PatronID { get; set; }   
         public int LibraryID { get; set; }
-        public Libraryy library { get; set; }
     }
 }

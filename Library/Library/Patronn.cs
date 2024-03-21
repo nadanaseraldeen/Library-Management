@@ -15,7 +15,5 @@ namespace Library
         public DateTime Opened { get; set; }
         public string State { get; set; }
         public int LibraryID { get; set; }
-
-
     }
 }

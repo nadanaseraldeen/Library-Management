@@ -16,7 +16,7 @@ namespace Library
     // This is a Admin Form
     public partial class Admin : Form
     {
-        private readonly CouchbaseManager _couchbaseManager;
+        private CouchbaseManager _couchbaseManager;
 
         // This is constructor 
         public Admin()
@@ -307,7 +307,7 @@ namespace Library
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error creating library: {ex.Message}");
+                MessageBox.Show($"Error creating librarian: {ex.Message}");
             }
         }
 
@@ -371,7 +371,9 @@ namespace Library
                 textBox12.Text = "";
                 dateTimePicker1.Value = DateTime.Now; 
                 comboBox2.SelectedIndex = 0; 
-                radioButton7.Checked = true;
+                radioButton5.Checked = false;
+                radioButton6.Checked = false;
+                radioButton7.Checked = false;
 
                 MessageBox.Show("Patron created successfully.");
             }

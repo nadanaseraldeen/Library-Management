@@ -14,6 +14,5 @@ namespace Library
         public string Position { get; set; }
         public string Username { get; set; }
         public int Password { get; set; }
-      //  public ICollection<Book> Books { get; set; }
     }
 }

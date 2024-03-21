@@ -11,9 +11,6 @@ namespace Library
     {
         public int ID { get; set; }
         public string Name { get; set; }
-
-     //   public ICollection<BookItem> BookItems { get; set; }
-
         public int LibraryID { get; set; }
 
     }

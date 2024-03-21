@@ -75,7 +75,9 @@ namespace Library
                 var isValid = await _couchbaseManager.LibrarianLogin(usernameLib, passwordLib);
                 if (isValid)
                 {
-                    MessageBox.Show("The Username Or Password Incorrect, Try Again");
+                    this.Hide();
+                    LibrarianForm lf = new LibrarianForm();
+                    lf.Show();
                 }
                 else
                 {
